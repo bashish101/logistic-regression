@@ -1,6 +1,6 @@
 import numpy as np
 
-class LogisticRegressor(object):
+class LogisticRegression(object):
 	def __init__(self,
 		     size,
 		     optimization = 'gradient_descent',

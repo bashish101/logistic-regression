@@ -2,7 +2,7 @@ import numpy as np
 from sklearn import datasets
 
 from utils import *
-from logistic_regressor import LogisticRegressor
+from logistic_regression import LogisticRegression
 
 def iris_classification():
 	print('\nIris classification using Logistic Regression\n')
@@ -27,7 +27,7 @@ def iris_classification():
 
 	print('Constructing classifier...')
 	size = (X_train.shape[-1], y_train.shape[-1])
-	classifier = LogisticRegressor(size)
+	classifier = LogisticRegression(size)
 	classifier.fit(X_train, y_train)
 
 	print('Generating test predictions...')
@@ -56,7 +56,7 @@ def digit_recognition():
 
 	print('Constructing classifier...')
 	size = (X_train.shape[-1], y_train.shape[-1])
-	classifier = LogisticRegressor(size)
+	classifier = LogisticRegression(size)
 	classifier.fit(X_train, y_train)
 
 	print('Generating test predictions...')
